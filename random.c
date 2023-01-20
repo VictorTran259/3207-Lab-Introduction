@@ -3,12 +3,11 @@
 #include <time.h>
 #include "random.h"
 
-int randchar() {
-    int character;
+char randchar() {
     int lower_bound = 65;
     int upper_bound = 90;
 
-    character = rand() % (upper_bound - lower_bound + 1) + lower_bound;
+    char character = (char) (rand() % (upper_bound - lower_bound + 1) + lower_bound);
 
     return character;
 }
